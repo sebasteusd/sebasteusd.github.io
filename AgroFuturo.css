@@ -254,3 +254,84 @@ footer {
 .footer-info {
     margin-top: 10px;
 }
+/* Estilos generales para dispositivos móviles */
+@media (max-width: 768px) {
+    .farmers-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .farmers-left, .farmers-right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .farmers-items {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .farmers-item {
+        margin-bottom: 20px;
+    }
+
+    .farmers-right img {
+        max-width: 90%;
+        height: auto;
+    }
+
+    #para-companias {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 50px 10px;
+    }
+
+    .companies-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .company-left, .company-right {
+        width: 100%;
+    }
+
+    .company-right img {
+        max-width: 90%;
+        height: auto;
+    }
+
+    .company-text {
+        margin-top: 20px;
+    }
+}
+
+/* Ajustes para pantallas muy pequeñas */
+@media (max-width: 480px) {
+    #para-agricultores {
+        padding: 50px 10px;
+    }
+
+    .farmers-left h2 {
+        font-size: 2rem;
+    }
+
+    .farmers-item {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+
+    #para-companias {
+        padding: 50px 10px;
+    }
+
+    .company-left h2 {
+        font-size: 2rem;
+    }
+
+    .company-text {
+        font-size: 0.9rem;
+        padding: 15px;
+    }
+}
