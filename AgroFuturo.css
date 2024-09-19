@@ -50,7 +50,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 10px;
+    margin: 50px;
 }
 
 nav ul li a {
@@ -58,10 +58,37 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
 }
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
 
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav-links li {
+    margin: 0;
+}
+/* Estilos para el menú toggle */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    width: 19px;
+    height: 3px;
+    background-color: #333;
+    margin: 3px 3px;
+}
 /* Hero Section */
 .hero {
-    background: url('FondoHero.jpg') no-repeat center center/cover;
+    background: url('Images/FondoHero.jpg') no-repeat center center/cover;
     height: 93vh;
     display: flex;
     justify-content: center;
@@ -70,11 +97,15 @@ nav ul li a {
     color: white;
     text-align: center;
 }
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
 
 .hero h1 {
     font-family: 'Poppins', sans-serif;
-    font-size: 3rem;
-    margin-bottom: 10px;
+    font-size: 6rem;
+    margin-bottom: 100px;
 }
 
 .hero p {
@@ -184,7 +215,7 @@ nav ul li a {
 }
 
 .farmers-item:hover {
-    background-color: #3bd37b;
+    background-color: #14c549;
 }
 
 .farmers-right {
@@ -240,7 +271,7 @@ nav ul li a {
 }
 
 .company-item:hover {
-    background-color: #3bd37b;
+    background-color: #FFEB3B;
 }
 
 /* Footer Styles */
@@ -333,5 +364,32 @@ footer {
     .company-text {
         font-size: 0.9rem;
         padding: 15px;
+    }
+}
+/* Responsividad */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 30%;
+        background-color: #333; /* Asegúrate de que el fondo coincida con el de la navbar */
+        position: absolute;
+        top: 90px; /* Ajusta según la altura del navbar */
+        left: 0;
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        padding: 1px;
+        text-align: center;
+        border-bottom: 4px solid #1db443; /* Añade un borde para separar los enlaces */
+    }
+
+    .menu-toggle {
+        display: flex;
     }
 }
