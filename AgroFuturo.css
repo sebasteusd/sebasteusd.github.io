@@ -1,0 +1,256 @@
+/* Global Styles */
+:root {
+    --color-light-gray: #f8f9fa;
+    --color-dark-gray: #34495e;
+    --color-blue: #5DADE2;
+    --color-green: #28a745;
+    --color-brown: #795548;
+    --color-light-blue: #03a9f4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    padding-top: 70px; /* Ajusta esto según la altura de tu navbar */
+}
+
+/* Navbar Styles */
+nav {
+    background-color: var(--color-blue);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Asegúrate de que la navbar esté sobre otros elementos */
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    background: url('Images/FondoHero.jpg') no-repeat center center/cover;
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    background-color: var(--color-green);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* Secciones */
+.section {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.section p {
+    margin-bottom: 30px;
+    line-height: 2;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Sección Valores */
+#valores {
+    background-color: var(--color-light-gray);
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Sección Para Agricultores */
+#para-agricultores {
+    background-color: var(--color-brown);
+    color: white;
+    padding: 100px 20px;
+}
+
+.farmers-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.farmers-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.farmers-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.farmers-left h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.farmers-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.farmers-item {
+    background-color: var(--color-light-blue);
+    padding: 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.farmers-item:hover {
+    background-color: #3bd37b;
+}
+
+.farmers-right {
+    width: 50%;
+}
+
+.farmers-right img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Sección Para Compañías */
+#para-companias {
+    background-color: transparent;
+    padding: 100px 20px;
+}
+
+.companies-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.company-left img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.company-right {
+    width: 50%;
+}
+
+.company-right h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.company-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.company-item {
+    background-color: var(--color-light-blue);
+    padding: 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.company-item:hover {
+    background-color: #3bd37b;
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--color-dark-gray);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-info {
+    margin-top: 10px;
+}
