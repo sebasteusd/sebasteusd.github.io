@@ -18,7 +18,7 @@ body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     color: #333;
-    padding-top: 70px; /* Ajusta esto según la altura de tu navbar */
+    padding-top: 70px; /* Altura de la navbar */
 }
 
 /* Navbar Styles */
@@ -31,7 +31,7 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000; /* Asegúrate de que la navbar esté sobre otros elementos */
+    z-index: 1000;
 }
 
 nav .logo {
@@ -338,7 +338,7 @@ footer {
     }
 }
 
-/* Ajustes para pantallas muy pequeñas */
+/* Pantallas muy pequeñas */
 @media (max-width: 480px) {
     #para-agricultores {
         padding: 50px 10px;
@@ -372,9 +372,9 @@ footer {
         display: none;
         flex-direction: column;
         width: 30%;
-        background-color: #333; /* Asegúrate de que el fondo coincida con el de la navbar */
+        background-color: #333; /* Fondo que coincide con el de la navbar */
         position: absolute;
-        top: 90px; /* Ajusta según la altura del navbar */
+        top: 90px; /* Altura del navbar */
         left: 0;
         z-index: 1000;
     }
@@ -386,7 +386,7 @@ footer {
     .nav-links a {
         padding: 1px;
         text-align: center;
-        border-bottom: 4px solid #1db443; /* Añade un borde para separar los enlaces */
+        border-bottom: 4px solid #1db443; /* Borde para separar los enlaces */
     }
 
     .menu-toggle {
