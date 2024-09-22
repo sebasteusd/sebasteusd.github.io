@@ -366,5 +366,30 @@ footer {
         padding: 15px;
     }
 }
+/* Responsividad */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 30%;
+        background-color: #333; /* Asegúrate de que el fondo coincida con el de la navbar */
+        position: absolute;
+        top: 90px; /* Ajusta según la altura del navbar */
+        left: 0;
+        z-index: 1000;
+    }
 
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        padding: 1px;
+        text-align: center;
+        border-bottom: 4px solid #1db443; /* Añade un borde para separar los enlaces */
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
 }
